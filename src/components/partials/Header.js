@@ -43,7 +43,10 @@ const Header = (props) => {
         </nav>
     return (
         <header className="header">
-            <h2 className="site-title">Find Your Song</h2>
+            <span>
+                <h2 className="site-title">Find Your Song</h2>
+                <h2 className="site-title-animation">And Make Playlists</h2>
+            </span>
             <div className="nav-link-bar">
                 {conditionalLinks}
             </div>

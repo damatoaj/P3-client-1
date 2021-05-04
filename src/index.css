@@ -3,6 +3,19 @@
   padding: 0;
 } */
 
+.auth-container {
+  display: flex;
+  border: 7px solid black;
+  border-radius: 5rem;
+  height: auto;
+  margin: 3rem;
+  padding: .5rem 0 2rem 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color:rgb(232, 236, 230); 
+  box-shadow: 5px 10px 10px  rgb(78, 77, 77);
+}
+
 .auth-panel {
   height: 80vh;
   width: 100%;
@@ -26,6 +39,8 @@ body {
   border-radius: 1rem;
   color: white;
   background-color: black;
+  transition: color 2s;
+  transition: background-color 2s;
 }
 
 .button:hover {
@@ -96,7 +111,8 @@ img {
 #intro-container {
   display: flex;
   border: 7px solid black;
-  border-radius:10px;
+  border-radius: 2rem;
+  padding: 1rem;
   height: auto;
   margin-top: 10vh;
   flex-direction: column;
@@ -120,7 +136,7 @@ li {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-radius: .3rem;
   padding: .5rem;
   bordeR: 3px solid black;
 }
@@ -131,6 +147,7 @@ li {
   color: #030327;
   padding: .25em;
   font-weight: 700;
+  transition: color 1s;
 }
 .nav-link:hover {
   color: rgb(184, 212, 221);
@@ -191,12 +208,36 @@ li {
 } */
 
 .site-title {
-  display: flex;
+  display: inline;
   background-color: rgb(247, 241, 235);
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: .2rem;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: .5em 1em;
+}
+
+.site-title-animation {
+  display: inline;
+  background-color: rgb(247, 241, 235);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: .5em 1em;
+}
+
+.site-title-animation:hover {
+  display: inline;
+  background-color: rgb(247, 241, 235);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
   border-radius: 5px;
   border: 3px solid black;
   padding: .5em 1em;
@@ -218,7 +259,7 @@ li {
 .team {
   display: flex;
   border: 7px solid black;
-  border-radius:10px;
+  border-radius: 3rem;
   height: auto;
   margin-top: 10vh;
   flex-direction: column;
@@ -231,7 +272,7 @@ li {
   display: flex;
   /* border: 7px solid black; */
   height: auto;
-  margin-top: 5vh;
+  padding: 1rem;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 5vh;

@@ -39,7 +39,7 @@ const Login = (props) => {
 
   if (redirect) return <Redirect to='/playlists' />
   return (
-    <section>
+    <div className="auth-container">
       {error ? <Error error={error} /> : null}
       <h2>LOGIN</h2>
       <form onSubmit={handleSubmit}>
@@ -61,7 +61,7 @@ const Login = (props) => {
         </div>
         <input className="button" type="submit" value="Log In" />
       </form>
-    </section>
+    </div>
   );
 }
 

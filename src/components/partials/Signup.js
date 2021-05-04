@@ -31,7 +31,7 @@ const Signup = (props) => {
 
 
   return (
-    <section>
+    <div className="auth-container">
       <h2>SIGNUP</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-elem">
@@ -49,7 +49,7 @@ const Signup = (props) => {
             <input
               type="email"
               name="email"
-              placeholder="sample@email.com"
+              placeholder="Sample@email.com"
               onChange={e => setEmail(e.target.value)}
             />
           </div>
@@ -64,7 +64,7 @@ const Signup = (props) => {
           </div>
           <input className="button" type="submit" value="Signup" />
         </form>
-    </section>
+    </div >
   );
 }
 
