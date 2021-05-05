@@ -32,8 +32,8 @@ const SearchResults = (props) => {
                         </select>
                     </div>
                 </form>
-                <h3 key={i}>{song.name}</h3>
-                <button className="button" type="submit" onClick={() => addSongPL(song, playlist)}>Add to your playlist</button >
+                <h3 className="song-title" key={i}>{song.name}</h3>
+                <button className="button" id="button-playlist" type="submit" onClick={() => addSongPL(song, playlist)}>Add to your playlist</button >
             </li>
         ))
     } else {
