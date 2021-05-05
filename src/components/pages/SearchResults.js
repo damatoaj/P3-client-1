@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const SearchResults = (props) => {
     const [playlist, setPlaylist] = useState('');
-    var playlistButtonText = "Add to you Playlist";
+    const [playlistButtonText, setPlaylistButtonText] = useState('Add to you Playlist');
     console.log(playlistButtonText)
     let songList;
 
@@ -16,7 +16,7 @@ const SearchResults = (props) => {
           { playlist:playlist, name:song.name, uri:song.uri, spotify_id:song.id}
         ).then(response => {
           console.log(response.data)
-          playlistButtonText = "Song Added";
+          setPlaylistButtonText("Song Added");
         }).catch(err => console.log(`UPDATE PLAYLIST ERROR 🤬`, err));
       };
   
