@@ -39,8 +39,8 @@ body {
   border-radius: 1rem;
   color: white;
   background-color: black;
-  transition: color 2s;
-  transition: background-color 2s;
+  transition: color 2s, background-color 2s;
+  
 }
 
 .button:hover {
@@ -80,6 +80,7 @@ code {
 .header{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcE1-7V1n0m19uyCnHWuwVNuGs2UV9DAL0Pg&usqp=CAU");
   display: flex;
+  background-repeat: no-repeat;
   flex-direction: column;
   border-bottom:  3px solid black;
   color: black;
