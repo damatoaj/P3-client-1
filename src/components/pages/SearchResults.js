@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 
 const SearchResults = (props) => {
-    const [playlist, setPlaylist] = useState('')
+    const [playlist, setPlaylist] = useState('');
+    var playlistButtonText = "Add to you Playlist";
     let songList;
 
     const addSongPL = (song, playlist) => {
@@ -14,6 +15,7 @@ const SearchResults = (props) => {
           { playlist:playlist, name:song.name, uri:song.uri, spotify_id:song.id}
         ).then(response => {
           console.log(response.data)
+          plyalistButtonText = "Song Added";
         }).catch(err => console.log(`UPDATE PLAYLIST ERROR 🤬`, err));
       };
   
