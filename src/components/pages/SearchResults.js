@@ -6,6 +6,7 @@ import { useState } from 'react';
 const SearchResults = (props) => {
     const [playlist, setPlaylist] = useState('');
     var playlistButtonText = "Add to you Playlist";
+    console.log(playlistButtonText)
     let songList;
 
     const addSongPL = (song, playlist) => {
