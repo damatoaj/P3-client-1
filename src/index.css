@@ -88,7 +88,7 @@ code {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcE1-7V1n0m19uyCnHWuwVNuGs2UV9DAL0Pg&usqp=CAU");
   display: flex;
   flex-direction: column;
-  border-bottom:  1.5rem solid black;
+  border-bottom:  1rem solid black;
   color: black;
   margin: 0;
   padding: 1em 0;
@@ -98,7 +98,7 @@ code {
 img {
   height: 210px;
   width: 190px;
-  border-radius: 5rem;
+  border-radius: 2rem;
   border: .5rem solid black;
   margin-bottom: 5vh;
   margin-top: 0
@@ -155,7 +155,7 @@ li {
   margin-right: auto;
   border-radius: .3rem;
   padding: .5rem;
-  border: .5rem solid black;
+  border: .3rem solid black;
 }
 
 .nav-link {
@@ -199,7 +199,11 @@ li {
   flex-direction: row;
   justify-content: space-evenly;
   background-color:rgb(232, 236, 230); 
-  box-shadow: 5px 10px 10px  rgb(78, 77, 77);
+  box-shadow: 
+    5px 10px 10px  rgb(78, 77, 77),
+    -5px 10px 10px  rgb(78, 77, 77),
+    5px -10px 10px  rgb(78, 77, 77),
+    -5px -10px 10px  rgb(78, 77, 77);
 }
 
 .playlist-list {
@@ -225,7 +229,7 @@ li {
 
 .search-btn {
   background-color: whitesmoke;
-  border: .5rem solid black;
+  border: .3rem solid black;
   text-decoration: none;
   color: black;
   border-radius: 1rem;
@@ -250,7 +254,7 @@ select {
   margin-right: auto;
   margin-bottom: 5rem;
   border-radius: 5rem;
-  border: 3rem solid black;
+  border: .3rem solid black;
   padding: .5em 1em;
 }
 
@@ -262,7 +266,7 @@ select {
   margin-right: auto;
   margin-bottom: 5rem;
   border-radius: 5rem;
-  border: 3px solid black;
+  border: .3rem solid black;
   padding: .5em 1em;
 }
 
