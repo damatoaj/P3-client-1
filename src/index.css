@@ -125,10 +125,10 @@ label {
   padding: .3rem;
   text-align: center;
 }
+
 li {
   list-style: none;
 }
-
 
 .nav-link-bar {
   display: flex;
@@ -168,6 +168,19 @@ li {
   margin-bottom: 5vh;
 }
 
+.playlist-container {
+  display: flex;
+  border: 7px solid black;
+  border-radius: 5rem;
+  height: auto;
+  margin: 3rem;
+  padding: .5rem 0 2rem 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color:rgb(232, 236, 230); 
+  box-shadow: 5px 10px 10px  rgb(78, 77, 77);
+}
+
 .playlist-list {
   display: flex;
   justify-content: center;
@@ -194,18 +207,6 @@ li {
   margin-left: 5px;
   padding: 1.5px;
 }
-
-/* .playlist-container {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5vh;
-  border: 1px solid black;
-  justify-content: space-around;
-  box-shadow: 3px 3px 10px  rgb(90, 90, 90);
-} */
 
 .site-title {
   display: inline;
