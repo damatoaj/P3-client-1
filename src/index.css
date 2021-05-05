@@ -107,6 +107,7 @@ img {
 .input-bar {
   border-radius: 5px;
   border: 2px solid black;
+  margin: 1rem;
 }
 
 #intro-container {

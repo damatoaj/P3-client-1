@@ -86,14 +86,18 @@ const Profile = (props) => {
 
   if (!playlist.playlists) {
     <h4>Make a new playlist</h4>
-  } else { 
+  } else {
+    return(
       playlistList = playlist.playlists.map((pl, i) => ( 
-        <li className="playlist-card">
-            <h4 key={i}>{pl.title}</h4> 
-            <button className="button" onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
-        </li>
-    ))
-}
+          <div className="auth-container">
+            <li className="playlist-card">
+                <h4 key={i}>{pl.title}</h4> 
+                <button className="button" onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
+            </li>
+          </div>
+        ))
+    ) 
+  }
   if (!props.currentUser) return <Redirect to='/auth' />
   return (
     <div>
@@ -102,7 +106,7 @@ const Profile = (props) => {
         <h4>Select one of your playlists to look through your songs.</h4>
         <form onSubmit={createPlaylist}>
           <div className="form-elem">
-            <label htmlFor="title">Playlist Title</label>
+            <label htmlFor="title">Playlist Title: </label>
             <input type="text" className="input-bar" name="title" placeholder="Title of your Playlist" onChange={e => props.setTitle(e.target.value)} />
             <input className="button" type="submit" value="Create Playlist" />
           </div>
