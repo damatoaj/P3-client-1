@@ -130,6 +130,14 @@ img {
   box-shadow: 5px 10px 10px  rgb(78, 77, 77);
 }
 
+@keyframes border-change {
+  0% {border-top: blue}
+  25% {border-right: blue}
+  50% {border-bottom: blue}
+  75% {border-left: blue}
+  100% {border-top: blue}
+}
+
 label {
   padding: .3rem;
   text-align: center;
@@ -283,13 +291,15 @@ select {
   margin-top: 3vh;
   margin-bottom: 5vh;
   padding: 1rem;
-  transition: width 2s, font-size 2s, color 2s;
+  transition: width 2s, font-size 2s, color 2s, border;
 }
 
 .song-card:hover {
   width: 90%;
   color: blue;
   font-size:xx-large;
+  animation-name: border-change;
+  animation-duration: 4s;
 }
 
 .song-title {
