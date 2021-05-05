@@ -90,7 +90,7 @@ const Profile = (props) => {
     playlistList = playlist.playlists.map((pl, i) => ( 
         <li className="playlist-container">
             <h4 key={i}>{pl.title}</h4> 
-            <button className="button" onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
+            <button className="button" style="width:5rem" onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
         </li>
       ))  
   }
