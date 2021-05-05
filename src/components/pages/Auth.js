@@ -1,5 +1,5 @@
-import Login from '../partials/Login'
-import Signup from '../partials/Signup'
+import Login from '../partials/Login';
+import Signup from '../partials/Signup';
 
 const Auth = (props) => {
     return (
@@ -10,4 +10,4 @@ const Auth = (props) => {
     );
 }
 
-export default Auth
+export default Auth;
