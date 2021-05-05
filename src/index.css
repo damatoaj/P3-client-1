@@ -5,7 +5,7 @@
 
 .auth-container {
   display: flex;
-  border: 7px solid black;
+  border: .3rem solid black;
   border-radius: 5rem;
   height: auto;
   margin: 3rem;
@@ -88,7 +88,7 @@ code {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcE1-7V1n0m19uyCnHWuwVNuGs2UV9DAL0Pg&usqp=CAU");
   display: flex;
   flex-direction: column;
-  border-bottom:  3px solid black;
+  border-bottom:  1.5rem solid black;
   color: black;
   margin: 0;
   padding: 1em 0;
@@ -98,8 +98,8 @@ code {
 img {
   height: 210px;
   width: 190px;
-  border-radius: 15px;
-  border: 3px solid black;
+  border-radius: 5rem;
+  border: .5rem solid black;
   margin-bottom: 5vh;
   margin-top: 0
 }
@@ -112,14 +112,14 @@ img {
 }
 
 .input-bar {
-  border-radius: 5px;
-  border: 2px solid black;
+  border-radius: .3rem;
+  border: .3rem solid black;
   margin: 1rem;
 }
 
 #intro-container {
   display: flex;
-  border: 7px solid black;
+  border: .3rem solid black;
   border-radius: 2rem;
   padding: 1rem;
   height: auto;
@@ -155,7 +155,7 @@ li {
   margin-right: auto;
   border-radius: .3rem;
   padding: .5rem;
-  bordeR: 3px solid black;
+  border: .5rem solid black;
 }
 
 .nav-link {
@@ -181,7 +181,7 @@ li {
   width: 100%;
   height: 3em;
   background-color:rgb(255, 255, 255);
-  border: 1px solid black;
+  border: .3rem solid black;
   box-shadow: 3px 3px 10px rgb(90, 90, 90);
   margin: 0;
   padding: 1rem;
@@ -190,7 +190,7 @@ li {
 .playlist-container {
   text-align: center;
   display: flex;
-  border: 7px solid black;
+  border: .3rem solid black;
   border-radius: 5rem;
   height: auto;
   margin: 3rem;
@@ -225,12 +225,12 @@ li {
 
 .search-btn {
   background-color: whitesmoke;
-  border: 2px solid black;
+  border: .5rem solid black;
   text-decoration: none;
   color: black;
-  border-radius: 5px;
-  margin-left: 5px;
-  padding: 1.5px;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
 }
 
 select {
@@ -249,8 +249,8 @@ select {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-  border-radius: 5px;
-  border: 3px solid black;
+  border-radius: 5rem;
+  border: 3rem solid black;
   padding: .5em 1em;
 }
 
@@ -261,7 +261,7 @@ select {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-  border-radius: 5px;
+  border-radius: 5rem;
   border: 3px solid black;
   padding: .5em 1em;
 }
@@ -274,7 +274,7 @@ select {
   margin-right: auto;
   margin-bottom: 5rem;
   border-radius: 5px;
-  border: 3px solid black;
+  border: .3rem solid black;
   padding: .5em 1em;
 }
 
@@ -285,7 +285,7 @@ select {
   width: 70%;
   height: 3em;
   background-color:rgb(255, 255, 255);
-  border: 1px solid black;
+  border: .3rem solid black;
   border-radius: 3rem;
   box-shadow: 3px 3px 10px rgb(90, 90, 90);
   margin-top: 3vh;
@@ -309,7 +309,7 @@ select {
 
 .team {
   display: flex;
-  border: 7px solid black;
+  border: .3rem solid black;
   border-radius: 3rem;
   height: auto;
   margin-top: 10vh;
