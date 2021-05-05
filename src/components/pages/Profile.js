@@ -90,7 +90,7 @@ const Profile = (props) => {
       playlistList = playlist.playlists.map((pl, i) => ( 
         <li className="playlist-card">
             <h4 key={i}>{pl.title}</h4> 
-            <button onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
+            <button className="button" onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
         </li>
     ))
 }
@@ -103,7 +103,7 @@ const Profile = (props) => {
         <div className="form-elem">
           <label htmlFor="title">Playlist Title</label>
           <input type="text" className="input-bar" name="title" placeholder="Title of your Playlist" onChange={e => props.setTitle(e.target.value)} />
-          <input type="submit" value="Create Playlist" />
+          <input className="button" type="submit" value="Create Playlist" />
         </div>
       </form>
       {/* <div className="inner-container">
