@@ -96,21 +96,21 @@ const Profile = (props) => {
 }
   if (!props.currentUser) return <Redirect to='/auth' />
   return (
-    <div className="auth-panel">
-      <h1>Welcome to your Playlists</h1>
-      <h4>Select one of your playlists to look through your songs.</h4>
-      <form onSubmit={createPlaylist}>
-        <div className="form-elem">
-          <label htmlFor="title">Playlist Title</label>
-          <input type="text" className="input-bar" name="title" placeholder="Title of your Playlist" onChange={e => props.setTitle(e.target.value)} />
-          <input type="submit" value="Create Playlist" />
-        </div>
-      </form>
-      {/* <div className="inner-container">
-      </div> */}
-        <PlaylistCard
-          playlistList={playlistList}
-        />
+    <div>
+      <div className="auth-container">
+        <h1>Welcome to your Playlists</h1>
+        <h4>Select one of your playlists to look through your songs.</h4>
+        <form onSubmit={createPlaylist}>
+          <div className="form-elem">
+            <label htmlFor="title">Playlist Title</label>
+            <input type="text" className="input-bar" name="title" placeholder="Title of your Playlist" onChange={e => props.setTitle(e.target.value)} />
+            <input className="button" type="submit" value="Create Playlist" />
+          </div>
+        </form>
+      </div>
+      <PlaylistCard
+        playlistList={playlistList}
+      />
     </div>
   );
 }
