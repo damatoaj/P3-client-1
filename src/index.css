@@ -131,11 +131,11 @@ img {
 }
 
 @keyframes border-change {
-  0% {border-top: 15px solid blue}
-  25% {border-right: 15px solid blue}
-  50% {border-bottom: 15px solid blue}
-  75% {border-left: 15px solid blue}
-  100% {border-top: 15px solid blue}
+  0% {border-top: .3rem solid blue}
+  25% {border-right: .3rem solid blue}
+  50% {border-bottom: .3rem solid blue}
+  75% {border-left: .3rem solid blue}
+  100% {border-top: .3rem solid blue}
 }
 
 label {
@@ -300,6 +300,7 @@ select {
   font-size:xx-large;
   animation-name: border-change;
   animation-duration: 4s;
+  animation-iteration-count:infinite;
 }
 
 .song-title {
