@@ -170,6 +170,10 @@ select {
   margin-top: 0;
 }
 
+#select-title {
+  margin-bottom: 0;
+}
+
 .playlist-card {
   display: flex;
   justify-content: space-evenly;

@@ -23,10 +23,9 @@ const SearchResults = (props) => {
             <li className="song-card">
                 <form>
                     <div>
-                        <h4>Select Playlist</h4> 
+                        <h4 id="select-title">Select Playlist</h4> 
                         <select onChange={e => setPlaylist(e.target.value)}>
                         {props.playlist.playlists.map((p, i) => {
-                            // console.log(p._id)
                             return <option key={i} value={p._id}>{p.title}</option>
                         })};
                         </select>
