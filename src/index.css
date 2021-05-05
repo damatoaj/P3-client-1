@@ -49,6 +49,10 @@ body {
   background-color:white;
 }
 
+#delete-button.button {
+  width: 5rem;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -192,6 +196,9 @@ li {
   margin-right: auto;
 }
 
+#playlist-title {
+  text-decoration: underline;
+}
 /* .portraits {
   height: 210px;
   width: 190px;
