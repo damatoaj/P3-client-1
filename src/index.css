@@ -166,13 +166,6 @@ li {
   cursor: pointer;
 }
 
-select {
-  margin-top: 0;
-}
-
-#select-title {
-  margin-bottom: 0;
-}
 
 .playlist-card {
   display: flex;
@@ -233,6 +226,14 @@ select {
   padding: 1.5px;
 }
 
+select {
+  margin-top: 0;
+}
+
+#select-title {
+  margin-bottom: 0;
+}
+
 .site-title {
   display: inline;
   background-color: rgb(247, 241, 235);
@@ -281,6 +282,11 @@ select {
   margin-top: 3vh;
   margin-bottom: 5vh;
   padding: 1rem;
+  transition: width 2s;
+}
+
+.song-card:hover {
+  width: 90%;
 }
 
 .song-title {
