@@ -96,7 +96,7 @@ const Profile = (props) => {
 }
   if (!props.currentUser) return <Redirect to='/auth' />
   return (
-    <div className="container">
+    <div className="auth-panel">
       <h1>Welcome to your Playlists</h1>
       <h4>Select one of your playlists to look through your songs.</h4>
       <form onSubmit={createPlaylist}>
