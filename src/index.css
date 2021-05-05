@@ -260,7 +260,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25em;
+  width: 70%;
   height: 3em;
   background-color:rgb(255, 255, 255);
   border: 1px solid black;

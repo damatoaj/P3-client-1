@@ -23,7 +23,7 @@ const SearchResults = (props) => {
             <li className="song-card">
                 <form>
                     <div>
-                        <h2>Select Playlist</h2> 
+                        <h4>Select Playlist</h4> 
                         <select onChange={e => setPlaylist(e.target.value)}>
                         {props.playlist.playlists.map((p, i) => {
                             // console.log(p._id)
@@ -32,7 +32,7 @@ const SearchResults = (props) => {
                         </select>
                     </div>
                 </form>
-                <h4 key={i}>{song.name}</h4>
+                <h3 key={i}>{song.name}</h3>
                 <button className="button" type="submit" onClick={() => addSongPL(song, playlist)}>Add to your playlist</button >
             </li>
         ))
