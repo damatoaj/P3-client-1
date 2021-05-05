@@ -15,7 +15,7 @@ const SearchResults = (props) => {
           { playlist:playlist, name:song.name, uri:song.uri, spotify_id:song.id}
         ).then(response => {
           console.log(response.data)
-          plyalistButtonText = "Song Added";
+          playlistButtonText = "Song Added";
         }).catch(err => console.log(`UPDATE PLAYLIST ERROR 🤬`, err));
       };
   
