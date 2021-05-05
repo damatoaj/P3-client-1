@@ -283,11 +283,12 @@ select {
   margin-top: 3vh;
   margin-bottom: 5vh;
   padding: 1rem;
-  transition: width 2s;
+  transition: width 2s, font-size 2s;
 }
 
 .song-card:hover {
   width: 90%;
+  font-size: larger;
 }
 
 .song-title {
