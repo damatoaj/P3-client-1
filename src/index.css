@@ -165,7 +165,8 @@ li {
   background-color:rgb(255, 255, 255);
   border: 1px solid black;
   box-shadow: 3px 3px 10px rgb(90, 90, 90);
-  margin: 3rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .playlist-container {
@@ -176,7 +177,7 @@ li {
   height: auto;
   margin: 3rem;
   width: 50%;
-  padding: .5rem 0 2rem 0;
+  padding: .5rem;
   flex-direction: column;
   justify-content: center;
   background-color:rgb(232, 236, 230); 
