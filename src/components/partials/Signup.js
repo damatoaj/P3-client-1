@@ -12,6 +12,7 @@ const Signup = (props) => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    console.log("about to make the post routeß")
     //help
     axios.post(
       `${process.env.REACT_APP_SERVER_URL}/api/signup`,
