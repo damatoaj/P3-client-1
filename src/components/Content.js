@@ -43,10 +43,6 @@ const Content = (props) => {
         setTitle={setTitle}
         title={title}
       />
-      <PrivateRoute 
-        path='/playlists/:id'
-        component={Playlist}
-      />
     </main>
   );
 }

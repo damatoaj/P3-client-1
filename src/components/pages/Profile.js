@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import PlaylistCard from '../partials/PlaylistCard';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 const Profile = (props) => {
   let playlist = props.playlist;
@@ -114,6 +114,10 @@ const Profile = (props) => {
       </div>
       <PlaylistCard
         playlistList={playlistList}
+      />
+      <Route 
+        path='/playlists/:id'
+        component={Playlist}
       />
     </div>
   );
