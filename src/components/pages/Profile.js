@@ -123,7 +123,7 @@ const Profile = (props) => {
         path='/playlists/:id'
         render={(props) => {
             let id = props.match.params._id;
-            let playlistName = playlist.find(({ id }) => id.toString() === props.match.params.id)
+            let playlistName = playlists.find(({ id }) => id.toString() === props.match.params.id)
             console.log(id)
             console.log(playlistName)
             return(
