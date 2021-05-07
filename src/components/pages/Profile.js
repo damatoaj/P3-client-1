@@ -122,9 +122,10 @@ const Profile = (props) => {
       <Route 
         path='/playlists/:id'
         render={(props) => {
+
             playlist={playlist}
             let id = playlist.match.params._id;
-            let playlistName = playlist.find(({ id }) => id.toString() === props.match.params.id)
+            let playlistName = playlist.find(({ id }) => id.toString() === playlist.match.params.id)
             console.log(id, "++++++++++++")
             console.log(playlistName, '((((((((((((')
             return(
