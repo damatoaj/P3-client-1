@@ -34,7 +34,6 @@ const Content = (props) => {
       />
       <PrivateRoute
         path='/playlists'
-        
         component={Profile}
         playlist={playlist}
         setPlaylist={setPlaylist}
@@ -42,6 +41,10 @@ const Content = (props) => {
         handleAuth={props.handleAuth}
         setTitle={setTitle}
         title={title}
+      />
+      <PrivateRoute 
+        path='/playlists/:id'
+        
       />
     </main>
   );
