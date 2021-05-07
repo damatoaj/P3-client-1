@@ -67,7 +67,7 @@ const Playlist = (props) => {
 
     return (
         <div className="playlist-container">
-            <h3>Playlist</h3>
+            <h3>Playlist {props.id}</h3>
             <ul className="playlist-list">
                 <li>
                     <SpotifyPlayer
