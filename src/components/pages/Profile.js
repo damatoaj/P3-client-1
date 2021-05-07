@@ -124,8 +124,8 @@ const Profile = (props) => {
         render={(props) => {
             console.log(props, "!!!!!!!!!")
             playlist={playlist}
-            let id = playlist.match._id;
-            let playlistName = playlist.find(({ id }) => id.toString() === playlist.match.id)
+            let id = props.match.params.id;
+            let playlistName = playlist.find(({ id }) => id.toString() === props.match.params.id)
             console.log(id, "++++++++++++")
             console.log(playlistName, '((((((((((((')
             return(
