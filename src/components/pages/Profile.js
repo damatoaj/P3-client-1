@@ -84,7 +84,7 @@ const Profile = (props) => {
       }).catch(err => console.log(`ERROR DELETING PLAYLIST 😤`, err))
       
   }
-  console.log(playlist)
+  console.log(playlist, "*******")
   // console.log(playlist.playlists)
 
   // console.log(playlist.playlists.length, 'fuck you')
