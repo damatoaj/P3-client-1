@@ -125,6 +125,7 @@ const Profile = (props) => {
         setTitle={props.setTitle}
         title={props.title}
         playlist={playlist}
+        playlist={props.playlist}
       />
     </div>
   );
