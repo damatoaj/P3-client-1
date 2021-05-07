@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Profile from './pages/Profile';
 import SearchResults from './pages/SearchResults';
+import Playlist from './pages/Playlist';
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
@@ -44,7 +45,7 @@ const Content = (props) => {
       />
       <PrivateRoute 
         path='/playlists/:id'
-        
+        component={Playlist}
       />
     </main>
   );
