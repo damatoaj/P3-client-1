@@ -121,13 +121,20 @@ const Profile = (props) => {
       />
       <Route 
         path='/playlists/:id'
-        render={(renderProps) =>
-          <Playlist
-            {...renderProps} 
-            setTitle={props.setTitle}
-            title={title}
-            playlist={playlist}
-          />
+        render={(props) => {
+            let id = props.match.params._id;
+            let playlistName = playlist.find(({ id }) => id.toString() === props.match.params.id)
+            console.log(id)
+            console.log(playlistName)
+            return(
+                <Playlist
+                  {...props} 
+                  setTitle={props.setTitle}
+                  title={title}
+                  playlist={playlist}
+                />
+            )
+          }
         }
       />
     </div>
