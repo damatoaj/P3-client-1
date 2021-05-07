@@ -2,6 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import PlaylistCard from '../partials/PlaylistCard';
+import { Link } from 'react-router-dom';
+
 const Profile = (props) => {
   let playlist = props.playlist;
   let setPlaylist = props.setPlaylist;
@@ -89,7 +91,9 @@ const Profile = (props) => {
   } else {  
     playlistList = playlist.playlists.map((pl, i) => ( 
         <li className="playlist-container">
-            <h4 key={i} id="playlist-title">{pl.title}</h4> 
+            <Link>
+              <h4 key={i} id="playlist-title">{pl.title}</h4> 
+            </Link>
             <button className="button" id="delete-button" onClick={(e) => deletePlaylist(pl._id)}>Delete Playlist</button>
         </li>
       ))  
