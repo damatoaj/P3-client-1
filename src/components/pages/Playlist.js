@@ -58,6 +58,7 @@ const Playlist = (props) => {
     console.log(props.playlist)
     let playlist = props.playlist;
     console.log(playlist, "MMMMMMMMMM")
+    console.log(playlist.playlists, "******")
 
     // size may also be a plain string using the presets 'large' or 'compact'
     const size = {
@@ -70,7 +71,7 @@ const Playlist = (props) => {
 
     return (
         <div className="playlist-container">
-            <h3>Playlist {playlist.playlists.title}</h3>
+            <h3>Playlist {playlist.playlists}</h3>
             <ul className="playlist-list">
                 <li>
                     <SpotifyPlayer
