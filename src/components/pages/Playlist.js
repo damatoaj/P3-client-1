@@ -55,7 +55,8 @@ import { useEffect,  useState } from 'react';
 
 const Playlist = (props) => {
     console.log(props, "%%%%%%%%")
-    console.log(props.playlists)
+    console.log(props.playlist)
+    let playlist = props.playlist;
 
     // size may also be a plain string using the presets 'large' or 'compact'
     const size = {
@@ -68,7 +69,7 @@ const Playlist = (props) => {
 
     return (
         <div className="playlist-container">
-            <h3>Playlist {props.id}</h3>
+            <h3>Playlist {playlist._id}</h3>
             <ul className="playlist-list">
                 <li>
                     <SpotifyPlayer
