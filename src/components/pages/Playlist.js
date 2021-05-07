@@ -67,7 +67,7 @@ const Playlist = (props) => {
     const theme = 'black'; // or 'white'
 
     let songList = props.songs.map((song) => {
-        console.log(song)
+        console.log(song, "JJJJJJJJJJJ")
         return(
             <li key={song.id}>
                 <h3>Song title</h3>
