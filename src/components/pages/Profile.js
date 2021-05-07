@@ -121,11 +121,14 @@ const Profile = (props) => {
       />
       <Route 
         path='/playlists/:id'
-        component={Playlist}
-        setTitle={props.setTitle}
-        title={props.title}
-        playlist={playlist}
-        playlist={props.playlist}
+        render={(renderProps) =>
+          <Playlist
+            {...renderProps} 
+            setTitle={props.setTitle}
+            title={title}
+            playlist={playlist}
+          />
+        }
       />
     </div>
   );

@@ -55,7 +55,7 @@ import { useEffect,  useState } from 'react';
 
 const Playlist = (props) => {
     console.log(props, "%%%%%%%%")
-    console.log(props.playlist)
+    console.log(props.playlists)
 
     // size may also be a plain string using the presets 'large' or 'compact'
     const size = {
