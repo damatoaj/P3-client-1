@@ -66,12 +66,22 @@ const Playlist = (props) => {
     const view = 'list'; // or 'coverart'
     const theme = 'black'; // or 'white'
 
+    let songList = props.songs.map((song) => {
+        console.log(song)
+        return(
+            <li key={song.id}>
+                <h3>Song title</h3>
+            </li>
+        )
+    }) 
+
 
     return (
         <div className="playlist-container">
             <h3>Playlist {props.title}</h3>
             <ul className="playlist-list">
                 <li>
+                    {songList}
                     <SpotifyPlayer
                         uri="spotify:track:3jjBPF4NDMCU51psU8JPpR" 
                         size={size}
