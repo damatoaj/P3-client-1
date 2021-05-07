@@ -4,6 +4,8 @@ import { Redirect } from 'react-router-dom';
 import PlaylistCard from '../partials/PlaylistCard';
 import { Link, Route } from 'react-router-dom';
 
+import Playlist from '../pages/Playlist';
+
 const Profile = (props) => {
   let playlist = props.playlist;
   let setPlaylist = props.setPlaylist;
