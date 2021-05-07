@@ -12,6 +12,8 @@ const Profile = (props) => {
   let playlistList;
   let title = props.title;
 
+  console.log(props)
+
   const [message, setMessage] = useState('Loading msg...');
   const createPlaylist = (e) => {
     e.preventDefault();
