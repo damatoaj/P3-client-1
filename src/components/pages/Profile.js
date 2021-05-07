@@ -120,6 +120,7 @@ const Profile = (props) => {
       <Route 
         path='/playlists/:id'
         component={Playlist}
+        playlist={playlist}
       />
     </div>
   );
