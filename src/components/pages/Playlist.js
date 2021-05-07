@@ -55,6 +55,7 @@ import { useEffect,  useState } from 'react';
 
 const Playlist = (props) => {
     console.log(props, "%%%%%%%%")
+    console.log(props.title, 'KKKKKKKKKKKKK')
     console.log(props.songs, "sdafadsfasdf")
     
     
