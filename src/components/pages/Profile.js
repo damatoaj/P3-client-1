@@ -131,9 +131,6 @@ const Profile = (props) => {
             return(
                 <Playlist
                   {...props} 
-                  setTitle={props.setTitle}
-                  title={title}
-                  playlist={playlist}
                 />
             )
           }
