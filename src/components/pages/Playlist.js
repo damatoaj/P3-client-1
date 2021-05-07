@@ -55,8 +55,6 @@ const deletePlaylist = (e) => {
 
 const Playlist = (props) => {
 
-    
-
     // size may also be a plain string using the presets 'large' or 'compact'
     const size = {
         width: '100%',
